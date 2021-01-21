@@ -1,3 +1,5 @@
+const path = require('path')
+
 const config = {
   projectName: 'taro3_react',
   date: '2020-8-10',
@@ -11,6 +13,9 @@ const config = {
   outputRoot: 'dist',
   plugins: [],
   defineConstants: {
+  },
+  alias: {
+    '@/vant': path.resolve(__dirname, '../src/components/vant-weapp/dist')
   },
   copy: {
     patterns: [
